@@ -1,7 +1,120 @@
 /* Decent Defaults */
-
-img,
-video {
+img video {
   width: 100%;
   height: auto;
+}
+body {
+  margin: 0;
+}
+
+nav.navbar {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
+  box-shadow: 0 0 0.25rem 0 rgba(0, 0, 0, 0.15);
+  min-height: 2.25rem;
+  border-color: #fbb03b;
+  border-bottom: 300px;
+  background-color: black;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar button {
+  margin: 0;
+  padding: 0;
+  background: none;
+  border: none;
+  display: flex;
+}
+
+/* Mobile Only */
+@media (max-width: 39.9375em) {
+  .navbar ul {
+    display: none;
+    background: #efefef;
+    padding: 1rem;
+    flex-direction: column;
+    gap: 0.75rem;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+}
+
+/* Desktop Only */
+
+@media (min-width: 40em) {
+  .navbar button {
+    display: none;
+  }
+  .navbar ul {
+    display: flex;
+    gap: 1rem;
+  }
+  nav.navbar {
+    grid-template-columns: 1fr auto 1fr;
+  }
+}
+
+article {
+  max-width: 100ch;
+  margin: 0 auto;
+  padding-bottom: 50px;
+  padding-top: 50px;
+}
+
+img {
+  margin: 0;
+  padding: 10px;
+}
+
+figcaption {
+  font-size: 10pt;
+}
+
+address {
+  font-size: 10pt;
+  padding-top: 5px;
+}
+
+main {
+  background-color: black;
+  color: #ededed;
+  font-family: sans-serif;
+}
+
+a {
+  color: #fbb03b;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  text-decoration: none;
+  border-color: #fbb03b;
+  border-style: solid;
+  border-radius: 100px;
+  border-width: 0.5px;
+  padding: 10px;
+}
+
+hr {
+  padding: 5px;
+  border: none;
+  background-color: #fbb03b;
+  padding-bottom: 0.01px;
+}
+
+.logo {
+  max-width: 25%;
+  display: block;
 }
