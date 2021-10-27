@@ -5,11 +5,13 @@ img video {
 }
 body {
   margin: 0;
+  min-height: 100vh;
+  background-color: black;
 }
 
 nav.navbar {
   display: grid;
-  grid-template-columns: auto 1fr;
+  grid-template-columns: 1fr auto 1fr;
   align-items: center;
   padding: 1rem;
   position: relative;
@@ -69,9 +71,6 @@ nav.navbar {
     display: flex;
     gap: 1rem;
   }
-  nav.navbar {
-    grid-template-columns: 1fr auto 1fr;
-  }
 }
 
 article {
@@ -96,7 +95,6 @@ address {
 }
 
 main {
-  background-color: black;
   color: #ededed;
   font-family: sans-serif;
 }
@@ -121,6 +119,11 @@ hr {
 }
 
 .logo {
-  max-width: 25%;
+  max-width: 12rem;
   display: block;
+}
+
+.feather-search {
+  justify-self: flex-end;
+  color: #fbb03b;
 }
