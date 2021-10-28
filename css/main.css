@@ -3,6 +3,10 @@ img video {
   width: 100%;
   height: auto;
 }
+
+p {
+  color: #ededed;
+}
 body {
   margin: 0;
   min-height: 100vh;
@@ -19,7 +23,7 @@ h2 {
   position: absolute;
   top: 120px;
   left: 16px;
-  color: white;
+  color: #ededed;
   font-family: sans-serif;
 }
 
@@ -27,7 +31,7 @@ h2 {
   position: absolute;
   top: 190px;
   left: 16px;
-  color: white;
+  color: #ededed;
   font-family: sans-serif;
   line-height: 30px;
 }
@@ -109,7 +113,7 @@ nav.navbar {
 @media (max-width: 39.9375em) {
   .navbar ul {
     display: none;
-    background: #efefef;
+    background: black;
     padding: 1rem;
     flex-direction: column;
     gap: 0.75rem;
